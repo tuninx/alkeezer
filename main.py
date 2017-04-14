@@ -230,8 +230,8 @@ def parse_text(text, username, message_id):
             elif les_enabled and not peshera_enabled and endurance >= 1 and orders['les'] not in action_list:
                 action_list.append(orders['les'])
             elif arena_enabled and not arena_delay:
-                if gold <5:
-                    if gold = 0:
+                if gold < 5:
+                    if gold <= 0:
                         action_list.append(orders['nitki3'])
                     if 0 < gold < 3:
                         action_list.append(orders['nitki2'])
