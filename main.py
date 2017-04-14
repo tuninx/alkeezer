@@ -69,7 +69,7 @@ orders = {
     'hero': '🏅Герой',
     'corovan': '/go',
     'peshera': '🕸Пещера'
-    'nitki': '/sell 101'
+    'nitki': '/sell_101'
 }
 
 captcha_answers = {
