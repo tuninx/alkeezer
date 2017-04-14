@@ -229,11 +229,10 @@ def parse_text(text, username, message_id):
                 action_list.append(orders['les'])
             elif arena_enabled and not arena_delay:
                 if gold <5:
-                    action_list.append(orders['nitki'])
-                if gold <5:
-                    action_list.append(orders['nitki'])
-                if gold <5:
-                    action_list.append(orders['nitki'])
+                    while gold < 5:
+                        action_list.append(orders['nitki'])
+                        if gold >= 5:
+                            break
                 curhour = datetime.now(tz).hour
                 if 9 <= curhour <= 23:
                     action_list.append('📯Арена')
