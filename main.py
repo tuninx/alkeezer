@@ -33,7 +33,7 @@ socket_path = ''
 host = 'localhost'
 
 # порт по которому слушать
-port = 1338
+port = 1344
 
 opts, args = getopt(sys.argv[1:], 'a:o:c:s:h:p:g', ['admin=', 'order=', 'castle=', 'socket=', 'host=', 'port=', 'gold='])
 
@@ -104,8 +104,8 @@ last_captcha_id = 0
 gold_to_left = 0
 
 bot_enabled = True
-arena_enabled = False
-les_enabled = False
+arena_enabled = True
+les_enabled = True
 peshera_enabled = False
 corovan_enabled = True
 order_enabled = True
