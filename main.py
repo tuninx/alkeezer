@@ -69,6 +69,7 @@ orders = {
     'hero': '🏅Герой',
     'corovan': '/go',
     'peshera': '🕸Пещера'
+    'nitki': '/sell 101'
 }
 
 captcha_answers = {
@@ -226,7 +227,9 @@ def parse_text(text, username, message_id):
                     action_list.append(orders['peshera'])
             elif les_enabled and not peshera_enabled and endurance >= 1 and orders['les'] not in action_list:
                 action_list.append(orders['les'])
-            elif arena_enabled and not arena_delay and gold >= 5:
+            elif arena_enabled and not arena_delay:
+                if gold <5:
+                    action_list.append(orders['nitki'])
                 curhour = datetime.now(tz).hour
                 if 9 <= curhour <= 23:
                     action_list.append('📯Арена')
