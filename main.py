@@ -68,7 +68,7 @@ orders = {
     'cover_symbol': '🛡',
     'hero': '🏅Герой',
     'corovan': '/go',
-    'peshera': '🕸Пещера'
+    'peshera': '🕸Пещера',
     'nitki': '/sell_101'
 }
 
