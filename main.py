@@ -236,8 +236,7 @@ def parse_text(text, username, message_id):
                     if 0 < gold < 3:
                         action_list.append(orders['nitki2'])
                     if 2 < gold < 5:
-                        action_list.append(orders['nitki'])                        
-                action_list.append(orders['nitki'])
+                        action_list.append(orders['nitki'])                  
                 curhour = datetime.now(tz).hour
                 if 9 <= curhour <= 23:
                     action_list.append('📯Арена')
